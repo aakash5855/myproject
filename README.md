@@ -1,2 +1,2 @@
 # myproject
-hello jenkist
+hello jenkin project test case
