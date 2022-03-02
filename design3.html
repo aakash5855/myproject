@@ -1,0 +1,2109 @@
+<meta
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		name="viewport"
+/>
+
+<style>
+	*{
+		font-family: Swis721 Cn BT;
+	}
+  body {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-size: 15px bold;
+    color: #fff;
+    background: white;
+  }
+  #compliance_main {
+    padding: 20px;
+  }
+
+  #companyName {
+    color: grey;
+    font-weight: 500;
+    margin: 20px;
+  }
+  .compliance_header {
+    text-decoration: none;
+    color: #BAFF76 ;
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 30px;
+    margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+    border-radius: 7%;
+  }
+  .compliance_header:hover {
+    background-color: #2f99c1;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #nextTab {
+    margin-left: 30px;
+  }
+  .compliance {
+    margin-top: 25px;
+  }
+  .ISO {
+    display: none;
+  }
+  .button_ISO {
+    height: 2.8rem;
+    width: 40rem;
+    border-radius: 5%;
+  }
+  .button_PCIDSS_a,
+  .button_PCIDSS {
+    height: 2.4rem;
+    width: 12.7rem;
+    border-radius: 2%;
+  }
+  .btn_a,
+  .btn {
+    color: white;
+    background-color: #2f99c1;
+    border-color: #2f99c1;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  h4 {
+    color: rgb(102, 101, 101);
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 10px;
+    margin-left: 15px;
+    padding: 10px;
+  }
+  .dataSet1-2,
+  .dataSet4-6,
+  .dataSet7-10,
+  .dataSet11-12,
+  .dataSet13,
+  .dataSet14-15,
+  .dataSet16-17 {
+    position: relative;
+    float: left;
+  }
+  .dataSet4-6,
+  .dataSet7-10,
+  .dataSet11-12,
+  .dataSet13,
+  .dataSet14-15,
+  .dataSet16-17 h4 {
+  }
+  .dataSet3 {
+    position: relative;
+    float: left;
+  }
+</style>
+<style>
+  .menublock {
+    float: left;
+    position: relative;
+    width: 340px;
+    height: 150px;
+    margin: 8px;
+    background-color: #e1edeb;
+    overflow: hidden;
+	background: linear-gradient(rgb(197, 198, 198) 10%, rgb(242, 243, 243) 80%);
+  }
+
+  .menublock-tall {
+    float: left;
+    position: relative;
+    width: 340px;
+    height: 240px;
+    margin: 8px;
+    background-color: #e1edeb;
+	background: linear-gradient(rgb(197, 198, 198) 10%, rgb(242, 243, 243) 80%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+  }
+  .menublock-extall {
+    float: left;
+    position: relative;
+    width: 340px;
+    height: 360px;
+    margin: 8px;
+    background-color: #e1edeb;
+	background: linear-gradient(rgb(197, 198, 198) 10%, rgb(242, 243, 243) 80%);
+    overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menublock-small {
+	height: 120px !important;
+	background: linear-gradient(rgb(197, 198, 198) 10%, rgb(242, 243, 243) 80%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .menublock-content {
+    text-align: center;
+  }
+
+  .menublock-content-title {
+    background-color: #035571;
+    padding: 3px;
+	font-size: 15px;
+	overflow: hidden;
+	box-shadow: 2px 2px 5px #F36541;
+  }
+
+  .content-links-busy,
+  .menublock-content-links {
+    padding: 3px;
+    padding-top: 10px;
+  }
+
+  .button_PCIDSS_mb {
+    height: 2.4rem;
+    width: 5.3rem;
+    border-radius: 2%;
+    cursor: pointer;
+  }
+  .button_PCIDSS_mbgb {
+    height: 2.6rem;
+    width: 7.3rem;
+    border-radius: 2%;
+    cursor: pointer;
+  }
+  glow {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px grey;
+}
+  .btn_mb {
+  width: 5rem;
+  height: 2.5rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #E5E4E2;
+  color: black ;
+  transition: all 0.2s ease-in-out;
+  }
+  .btn_mbgb:hover {
+	color: rgba(2,2,2, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+.btn_mb:hover {
+	color: rgba(2,2,2, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+  .btn_mbgb {
+  width: 20rem;
+  height: 1.5rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  background-color: #FFFAFA;
+  color: black ;
+  }
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  float : right;
+  border-bottom: 1px black;
+   -webkit-transition:all 0.2s ease-in;
+    -moz-transition:all 0.2s ease-in;
+    transition:all 0.2s ease-in;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: #555;
+  color: #fff;
+  font-size:14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+ a:hover span {
+    opacity:1;
+}
+  
+  .btn_sections_mb {
+  width: 11rem;
+  height: 3.5rem;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #C6E8FF;
+  color: black ;
+  
+}
+	
+  }
+</style>
+
+<div class="wrapper">
+	<div class="content-wrapper">
+		<div class="main" id="compliance_main">
+			<div class="header" id="compliance_main_header">
+				<h1>
+					<a
+							href="#"
+							class="compliance_header nextTab"
+							id="PCIDSSaTab"
+							onclick="showContent('PCIDSSa')"
+					>PCI DSS</a
+					>
+					<a
+							href="#"
+							class="compliance_header nextTab"
+							id="ISOTab"
+							onclick="showContent('ISO')"
+					>ISO 27001</a
+					>
+				</h1>
+			</div>
+
+			<!-- PCIDSS Code Starts Here-->
+			<div class="compliance allData PCIDSS">
+				
+			<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Security configuration Enforcement
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/d1c61cd0-ff11-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/eaa525c0-ff11-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Antivirus and Malware Protection Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/f7e76ea0-b96f-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_4 ">
+								Antivirus Update Failure Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/f0f76870-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/ff19e090-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+
+						</div>
+					</div>
+				</div>
+				<div class="menublock ">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Recording and Monitoring
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/e969ec70-086e-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/e969ec70-086e-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30 ">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Assets and Data Protection</div>
+						<div class="content-links-busy">
+							<a
+									href="/app/kibana#/dashboard/ea103460-2d56-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/53f43f60-2d58-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13 ">
+								File Access Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/64d16ab0-2d58-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes Report
+							</button></a
+							>
+
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Periodic and Regular Monitoring
+						</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Recording Track
+						</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Critical Monitoring Dashboard</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Logs Recording</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Accounts Activity Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13 ">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28 ">
+								Multiple Login Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  ">
+								Logon and Logoff Report with Duration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  ">
+								Object Access 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+					<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Access and Authentication Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/6544f6f0-fcda-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13 ">
+								Summary User
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/fbc61720-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/158fa720-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28 ">
+								Multiple Login Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 ">
+								Logon / Logoff report with Duration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_5 pci_20 pci_11">
+								Interactivity Login Activity Details
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_5 pci_20 pci_11">
+								Linux Login Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title" >Risk Identification and Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/254db040-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_5 pci_20 pci_11">
+								Interactivity Login Activity Details
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/f0f76870-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/453a24b0-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb  pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/5f5f4230-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/6de0ca40-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/7bb12ac0-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+							<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Retention and Protection
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/66c81ce0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27 ">
+								Log Integrity Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27  ">
+								GPO modification report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27 ">
+								GPO creation report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27  ">
+								Event Log cleared report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Authentication Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/1b991d60-0874-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/e1ee8010-0872-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1b991d60-0874-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/e1ee8010-0872-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 ">
+								Account and Password Policy
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Permissions Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_25 pci_26 pci_28 pci_6 pci_7 ">
+								Oracle Create User Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions 
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/9b507640-0246-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Security Configuration Tracking
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/3db664d0-ff0e-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/4c1a0270-2d62-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/6d6a4ed0-ff0e-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								 User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgbpci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7 ">
+								 GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								 GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1  pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								 Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci ">
+								 Windows AD security group Create and Modify Actions
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Status and Privileges Tracking at User Level</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration  
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_9 pci_7 pci_13">
+								Windows AD Locked Accounts Report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets 
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Access Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/dae32a30-fd6b-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb ">
+								Windows AD security group Create and Modify Actions 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_21 pci_28 pci_7 pci_9 pci_13">
+								Object Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23">
+								File Integrity Monitoring
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_7 ">
+								Oracle User Query 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes Report
+							</button></a
+							>
+							
+
+							<a
+									href="/app/kibana#/dashboard/baf64f50-0247-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Detect and Investigate Abnormal Events</div>
+						<div class="menublock-content-links">
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb ">
+								Logon Logoff Report with Duration
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28">
+								Multiple Login Report
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access 
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking 
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Roles and Privileges Tracker</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary Users
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_7 ">
+								Oracle User Query 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_25 pci_26 pci_28 pci_6 pci_7">
+								Oracle Create User
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+		</div>
+			<!-- by section -->
+			<div class="compliance allData PCIDSSa">
+				<div class="PCIDSS_sections">
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb ">
+							<!--onclick="showSections('pci_3')"-->
+							<div class="tooltip">&#x1F6C8;
+							<a class="show">
+					<span class="tooltiptext">Protect Stored Cardholder Data</span>
+					</div> 
+					
+					
+						Requirement 3
+					
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_1')">3.1</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_2')">3.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_3')">3.3 </button>
+					</button><br>
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb">
+							<!--onclick="showSections('pci_5')"-->
+							<div class="tooltip">&#x1F6C8;
+					<span class="tooltiptext">Protect All Systems against malware and regularly update antivirus software or programs</span>
+					</div>
+					
+						Requirement 5
+						<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_4')">5.1 </button>
+					</button>
+					<br>
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb">
+							<!--onclick="showSections('pci_6')"-->
+							<div class="tooltip">&#x1F6C8;
+					<span class="tooltiptext">Develop and maintain secure systems and applications</span>
+					</div>
+					
+						Requirement 6
+					</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_5')">6.3.1 </button>
+					<button class="btn_mb button_PCIDSS_mb"onclick="showSections('pci_6')">6.4.2 </button><br>
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb">
+							<!--onclick="showSections('pci_7')"-->
+							<div class="tooltip">&#x1F6C8;
+					<span class="tooltiptext">Restrict access to cardholder data by Business need to know</span>
+					</div>
+				
+						Requirement 7
+					</button>
+					<button class="btn_mb button_PCIDSS_mb"onclick="showSections('pci_7')">7.1 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_8')">7.1.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_9')">7.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_10')">7.2.2 </button><br>
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb">
+							<!--onclick="showSections('pci_8')"-->
+					
+						Requirement 8
+						<div class="tooltip">&#x1F6C8;
+					<span class="tooltiptext">Identify and authenticate access to system components</span>
+					</div>
+					</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_11')">8.1.1 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_12')">8.1.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_13')">8.1.3 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_14')">8.2.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_15')">8.2.3 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_16')">8.2.4 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_17')">8.2.5 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_18')">8.2.6 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_20')">8.5 </button><br>
+					<button
+							class="btn_mb button_PCIDSS_mb btn_sections_mb">
+							<!--onclick="showSections('pci_10')"-->
+							<div class="tooltip">&#x1F6C8;
+					<span class="tooltiptext">Track and Monitor all access to network resources and cardholder data</span>
+					</div>
+					
+						Requirement 10
+					</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_21')">10.1</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_22')">10.2.1 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_23')">10.2.2 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_24')">10.2.4</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_25')">10.2.5</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_26')">10.3</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_27')">10.5 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_28')">10.6 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_29')">10.6.1 </button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_30')">10.6.2 </button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_31')">10.7</button>
+					<button class="btn_mb button_PCIDSS_mb" onclick="showSections('pci_32')">10.8</button> 
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Security configuration Enforcement
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/d1c61cd0-ff11-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/eaa525c0-ff11-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Antivirus and Malware Protection Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/f7e76ea0-b96f-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_4">
+								Antivirus Update Failure Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/f0f76870-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/ff19e090-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+
+						</div>
+					</div>
+				</div>
+				<div class="menublock ">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Recording and Monitoring
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/e969ec70-086e-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13 ">
+								Summary User 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/e969ec70-086e-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Assets and Data Protection</div>
+						<div class="content-links-busy">
+							<a
+									href="/app/kibana#/dashboard/ea103460-2d56-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/53f43f60-2d58-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13 ">
+								File Access Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/64d16ab0-2d58-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes Report
+							</button></a
+							>
+
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Periodic and Regular Monitoring
+						</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Recording Track
+						</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Critical Monitoring Dashboard</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Logs Recording</div>
+						<div class="menublock-content-links">
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Accounts Activity Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28 ">
+								Multiple Login Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci ">
+								Logon and Logoff Report with Duration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci ">
+								Object Access 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/4bc26ef0-fcc2-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+					<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Access and Authentication Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/6544f6f0-fcda-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/fbc61720-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/158fa720-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28">
+								Multiple Login Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 ">
+								Logon / Logoff report with Duration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_5 pci_20 pci_11">
+								Interactivity Login Activity Details
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/5fceea80-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 ">
+								Linux Login Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title" >Risk Identification and Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/254db040-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci  pci_1 pci_2 pci_3 pci_5 pci_20 pci_11">
+								Interactivity Login Activity Details
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/f0f76870-fd6d-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/453a24b0-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/5f5f4230-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/6de0ca40-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/7bb12ac0-0172-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+							<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Logs Retention and Protection
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/66c81ce0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27">
+								Log Integrity Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27 ">
+								GPO modification report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27">
+								GPO creation report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_27">
+								Event Log cleared report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/78917cf0-01ae-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Authentication Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/1b991d60-0874-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/e1ee8010-0872-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1b991d60-0874-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/e1ee8010-0872-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28">
+								Account and Password Policy
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13 ">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/76ba8a90-0873-11eb-8ad1-fb8c7e79eb77_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="menublock menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Permissions Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_25 pci_26 pci_28 pci_6 pci_7 ">
+								Oracle Create User Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/80072640-b970-11eb-b28d-870ff82e0a8c?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7 ">
+								Windows AD security group Delete and Modify Actions 
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/9b507640-0246-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock-tall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">
+							Security Configuration Tracking
+						</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/3db664d0-ff0e-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Windows Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/4c1a0270-2d62-11eb-8ebb-51b37065c6a3?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_5 pci_15 pci_16 pci_17 pci_18 pci_20 pci_28 pci_4">
+								Linux Server Hardening Report
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/6d6a4ed0-ff0e-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User
+
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								 User Registration and De Registration
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								 GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								 GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								 Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/3127d650-ff12-11ea-bb8a-bb2e14b2526f_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci ">
+								 Windows AD security group Create and Modify Actions
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Status and Privileges Tracking at User Level</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13">
+								Summary User  
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12">
+								User Registration and De Registration  
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_9 pci_7 pci_13">
+								Windows AD Locked Accounts Report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes report 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets 
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">User Access Tracking</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/dae32a30-fd6b-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci">
+								Windows AD security group Create and Modify Actions 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13">
+								File Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_21 pci_28 pci_7 pci_9 pci_13">
+								Object Access Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23">
+								File Integrity Monitoring
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_7">
+								Oracle User Query 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/1589d030-fd6c-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_9 pci_13">
+								File Permission Changes Report
+							</button></a
+							>
+							
+
+							<a
+									href="/app/kibana#/dashboard/baf64f50-0247-11eb-a689-7baed141c159_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Detect and Investigate Abnormal Events</div>
+						<div class="menublock-content-links">
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13  ">
+								Summary User
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci">
+								Logon Logoff Report with Duration
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_5 pci_20 pci_11 pci_22 pci_23 pci_28">
+								Multiple Login Report
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_22 pci_9 pci_13">
+								User Object Access 
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_7 pci_6 pci_8 pci_10 pci_23 pci_22 pci_28 pci_9 pci_13 ">
+								File Access Report
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking 
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb  pci">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+						<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_22 pci_24 pci_28 pci_29 pci_30">
+								User Activity Report
+							</button></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="menublock menublock-extall">
+					<div class="menublock-content">
+						<div class="menublock-content-title">Roles and Privileges Tracker</div>
+						<div class="menublock-content-links">
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Creation Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_25 pci_26 pci_28 pci_22 pci_7">
+								GPO Modification Tracking
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci  pci_1 pci_2 pci_3 pci_29 pci_4 pci_6 pci_8 pci_10 pci_23 pci_12 pci_14 pci_15 pci_16 pci_17 pci_18 pci_28 pci_27 pci_22 pci_6 pci_7">
+								Windows AD security group Delete and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci ">
+								Windows AD security group Create and Modify Actions
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_1 pci_2 pci_3 pci_6 pci_7 pci_8 pci_13">
+								User Privileges for Assets 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22 pci_23 pci_24 pci_29 pci_30 pci_6 pci_7 pci_9 pci_13 ">
+							
+							Summary Users
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_29 pci_4 pci_5 pci_20 pci_11 pci_12 pci_14 pci_15 pci_15 pci_16 pci_17 pci_18 pci_28 pci_12 pci_26 pci_28 pci_22  pci_23 pci_6 pci_7 pci_9 pci_12 ">
+								User Registration and De Registration 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_6 pci_8 pci_10 pci_23 pci_7 ">
+								Oracle User Query 
+							</button></a
+							>
+							<a
+									href="/app/kibana#/dashboard/b4f592c0-fcbe-11ea-a684-ab6d2beab2ac_PCIDSS_38?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+							><button class="btn_mbgb button_PCIDSS_mbgb pci pci_12 pci_25 pci_26 pci_28 pci_6 pci_7">
+								Oracle Create User
+							</button></a
+							>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- PCIDSS Code Ends Here-->
+			<!--ISO Code Starts Here-->
+			<div class="compliance ISO">
+				<!-- All Buttons Starts here-->
+				<div class="allButtons">
+					<a
+							href="/app/kibana#/dashboard/d7d9cb10-09fe-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">A.7.3.1 User Alert Delete</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/1765acf0-0a21-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.11.2.9 Additional Security Policies
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/14f9b1a0-0a03-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.8.3.1 Policy Compliance to Removable Media
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/1e303440-123e-11eb-8ea2-bd2a92197025_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.12.2.1 Khika Alert Report Antivirus Update Failure
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/944f62c0-0f6b-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.1.2 Access to Network Resources Report
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/5cc58090-0f80-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">A.12.3.1 Net Backup</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/87ee4a20-0a0f-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.2.1 User Registration and De-Registration
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/ae15d0-0a21-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.12.4.1 Additional Security policies
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/a0ad4350-0f72-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.2.2 Active Directory Security Group - Create and Modify
+							Actions
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/4acb48b0-0fd1-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.12.4.2 Log Integrity Report
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/805b8960-0a0c-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.2.5 User Privileges for Assets
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/?filter=ISO&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.12.4.3 Khika Audit Report
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/34d24620-0f78-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.2.6 Active Directory Security Group - Delete and Modify
+							Actions
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/08848dd0-0a23-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.12.4.4 Windows Time Synchronisation Report
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/8ed66ba0-0a15-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.4.2 Account and Password Policy
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/2970b360-0fd3-11eb-942b-ad21bbdf3338_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.16.1.2 Khika Alert Report
+						</button></a
+					>
+					<a
+							href="/app/kibana#/dashboard/9d062a30-0a15-11eb-a8b9-3197853ce495_ISO_40?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))"
+					>
+						<button class="btn button_ISO">
+							A.9.4.3 Account and Password Policy
+						</button></a
+					>
+				</div>
+				<!-- All Buttons Ends here-->
+			</div>
+			<!--ISO Code Ends Here-->
+		</div>
+	</div>
+
+	<!--ALL JAVASCRIPT LIBRARIES START-->
+	<script>
+    const showSections = (section) => {
+      document.querySelectorAll('.pci').forEach((item) => {
+        item.style.backgroundColor = '#e2e5e2'
+        item.style.color = '#lightgrey'
+        item.style.fontWeight = 'normal'
+        item.style.fontSize = '10px'
+      })
+
+      // Highlighting button Code STARTS here
+
+      const allButtons = document.getElementsByClassName(
+        'btn_mb button_PCIDSS_mb btn_sections_mb'
+      )
+	  // pci_3.1 (1) pci_3.2 (2)
+      const buttonList = ['pci_1','pci_2','pci_3','pci_4','pci_5','pci_6', 'pci_7', 'pci_8', 'pci_9', 'pci_10', 'pci_11', 'pci_12', 'pci_13', 'pci_14', 'pci_15', 'pci_16', 'pci_17', 'pci_18', 'pci_19', 'pci_20', 'pci_21', 'pci_22', 'pci_23', 'pci_24', 'pci_25', 'pci_26', 'pci_27', 'pci_28', 'pci_29', 'pci_30', 'pci_31', 'pci_32']
+
+      for (let i = 0; i < allButtons.length; i++) {
+        const button = allButtons[i]
+        console.log(section, allButtons.length)
+
+        if (section === buttonList[i]) {
+									document.getElementsByClassName('btn_mb button_PCIDSS_mb btn_sections_mb ')[i].style.backgroundColor = '#1cd13d;'
+									document.getElementsByClassName('btn_mb button_PCIDSS_mb btn_sections_mb ')[i].style.borderColor = '#1cd13d;'
+        } else {
+									document.getElementsByClassName('btn_mb button_PCIDSS_mb btn_sections_mb ')[i].style.backgroundColor = '#C6E8FF'
+									document.getElementsByClassName('btn_mb button_PCIDSS_mb btn_sections_mb ')[i].style.borderColor = '#98D6EA'
+        }
+      }
+
+      // Highlighting button Code ENDS here
+
+      document.querySelectorAll('.' + section).forEach((item) => {
+        item.style.backgroundColor = '#F8F8FF'
+        item.style.fontWeight = 'bold'
+        item.style.fontSize = '12px'
+        item.style.color = '#000000'
+      })
+    }
+    const toggleSection = (selectedHeader, selectedElement) => {
+      // unselect everything first
+      document.querySelectorAll('.compliance').forEach((item) => {
+        item.style.display = 'none'
+      })
+      document.querySelectorAll('.compliance_header').forEach((item) => {
+        item.style.backgroundColor = 'white'
+        item.style.color = 'black'
+      })
+
+      // Changing colors of our header Tab
+      selectedHeader.style.backgroundColor = '#7FF134 '
+      selectedHeader.style.color = 'white'
+
+      // Displaying our html Content
+      selectedElement.style.display = 'block'
+    }
+
+    const showContent = (tabName) => {
+      const isoElement = document.querySelector('.ISO')
+      const isoHeader = document.querySelector('#ISOTab')
+      const pciElement = document.querySelector('.PCIDSS')
+      const pciHeader = document.querySelector('#PCIDSSTab')
+      const pciaElement = document.querySelector('.PCIDSSa')
+      const pciaHeader = document.querySelector('#PCIDSSaTab')
+
+      switch (tabName) {
+        case 'ISO':
+          toggleSection(isoHeader, isoElement)
+          break
+
+        case 'PCIDSS':
+          toggleSection(pciHeader, pciElement)
+          break
+
+        case 'PCIDSSa':
+          toggleSection(pciaHeader, pciaElement)
+          break
+
+        default:
+          console.log('Default Block executed')
+          break
+      }
+    }
+    showContent('PCIDSSa')
+  </script>
+	<!--ALL JAVASCRIPT LIBRARIES END-->
+</div>
